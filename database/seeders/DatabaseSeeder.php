@@ -18,6 +18,10 @@ class DatabaseSeeder extends Seeder
             [
                 RolesPermissionsSeeder::class,
                 UserSeeder::class,
+                ClustersSeeder::class,
+                CoursesSeeder::class,
+                UnitsSeeder::class,
+                PackagesSeeder::class,
 //                SessionSeeder::class,
             ]
         );

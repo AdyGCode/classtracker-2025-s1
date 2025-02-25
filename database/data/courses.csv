@@ -1,0 +1,253 @@
+National Code,AQF Level,Title,TGA Status,State Code,Nominal Hours,Type,QA,StateCode,NatCode,NatTitle,NatCodeAndTitle
+BSB10115,Certificate I in,Business,Current,AVU7,150,Qualification,AVU7,AVU7,BSB10115,Business,BSB10115 Certificate I in Business
+BSB20115,Certificate II in,Business,Current,AVU8,325,Qualification,AVU8,AVU8,BSB20115,Business,BSB20115 Certificate II in Business
+BSB20215,Certificate II in,Customer Engagement,Current,AVQ9,385,Qualification,AVQ9,AVQ9,BSB20215,Customer Engagement,BSB20215 Certificate II in Customer Engagement
+BSB30115,Certificate III in,Business,Current,AVR7,420,Qualification,AVR7,AVR7,BSB30115,Business,BSB30115 Certificate III in Business
+BSB30215,Certificate III in,Customer Engagement,Current,AVS6,385,Qualification,AVS6,AVS6,BSB30215,Customer Engagement,BSB30215 Certificate III in Customer Engagement
+BSB30315,Certificate III in,Micro Business Operations,Current,AVT8,380,Qualification,AVT8,AVT8,BSB30315,Micro Business Operations,BSB30315 Certificate III in Micro Business Operations
+BSB30415,Certificate III in,Business Administration,Current,AVS2,420,Qualification,AVS2,AVS2,BSB30415,Business Administration,BSB30415 Certificate III in Business Administration
+BSB30515,Certificate III in,Business Administration (International Education),Current,AVR6,485,Qualification,AVR6,AVR6,BSB30515,Business Administration (International Education),BSB30515 Certificate III in Business Administration (International Education)
+BSB30615,Certificate III in,International Trade,Current,AVS0,390,Qualification,AVS0,AVS0,BSB30615,International Trade,BSB30615 Certificate III in International Trade
+BSB30715,Certificate III in,Work Health and Safety,Current,AVV3,305,Qualification,AVV3,AVV3,BSB30715,Work Health and Safety,BSB30715 Certificate III in Work Health and Safety
+BSB30815,Certificate III in,Recordkeeping,Current,AVS7,375,Qualification,AVS7,AVS7,BSB30815,Recordkeeping,BSB30815 Certificate III in Recordkeeping
+BSB30915,Certificate III in,Business Administration (Education),Current,AVV0,400,Qualification,AVV0,AVV0,BSB30915,Business Administration (Education),BSB30915 Certificate III in Business Administration (Education)
+BSB31015,Certificate III in,Business Administration (Legal),Current,AVQ6,370,Qualification,AVQ6,AVQ6,BSB31015,Business Administration (Legal),BSB31015 Certificate III in Business Administration (Legal)
+BSB31115,Certificate III in,Business Administration (Medical),Current,AVT0,425,Qualification,AVT0,AVT0,BSB31115,Business Administration (Medical),BSB31115 Certificate III in Business Administration (Medical)
+BSB31215,Certificate III in,Library and Information Services,Current,AZK2,538,Qualification,AZK2,AZK2,BSB31215,Library and Information Services,BSB31215 Certificate III in Library and Information Services
+BSB40115,Certificate IV in,Advertising,Replaced,AVQ7,450,Qualification,AVQ7,AVQ7,BSB40115,Advertising,BSB40115 Certificate IV in Advertising
+BSB40215,Certificate IV in,Business,Current,AVV9,515,Qualification,AVV9,AVV9,BSB40215,Business,BSB40215 Certificate IV in Business
+BSB40315,Certificate IV in,Customer Engagement,Current,AVW0,585,Qualification,AVW0,AVW0,BSB40315,Customer Engagement,BSB40315 Certificate IV in Customer Engagement
+BSB40415,Certificate IV in,Small Business Management,Replaced,AVU6,420,Qualification,AVU6,AVU6,BSB40415,Small Business Management,BSB40415 Certificate IV in Small Business Management
+BSB40515,Certificate IV in,Business Administration,Current,AVS9,530,Qualification,AVS9,AVS9,BSB40515,Business Administration,BSB40515 Certificate IV in Business Administration
+BSB40615,Certificate IV in,Business Sales,Current,AVS8,410,Qualification,AVS8,AVS8,BSB40615,Business Sales,BSB40615 Certificate IV in Business Sales
+BSB40715,Certificate IV in,Franchising,Current,AVT4,410,Qualification,AVT4,AVT4,BSB40715,Franchising,BSB40715 Certificate IV in Franchising
+BSB40915,Certificate IV in,Governance,Current,AVR5,420,Qualification,AVR5,AVR5,BSB40915,Governance,BSB40915 Certificate IV in Governance
+BSB41015,Certificate IV in,Human Resources,Current,AVT3,415,Qualification,AVT3,AVT3,BSB41015,Human Resources,BSB41015 Certificate IV in Human Resources
+BSB41115,Certificate IV in,International Trade,Current,AVU1,440,Qualification,AVU1,AVU1,BSB41115,International Trade,BSB41115 Certificate IV in International Trade
+BSB41315,Certificate IV in,Marketing,Replaced,AVS4,440,Qualification,AVS4,AVS4,BSB41315,Marketing,BSB41315 Certificate IV in Marketing
+BSB41415,Certificate IV in,Work Health and Safety,Current,AVW3,470,Qualification,AVW3,AVW3,BSB41415,Work Health and Safety,BSB41415 Certificate IV in Work Health and Safety
+BSB41515,Certificate IV in,Project Management Practice,Current,AVR2,330,Qualification,AVR2,AVR2,BSB41515,Project Management Practice,BSB41515 Certificate IV in Project Management Practice
+BSB41615,Certificate IV in,Purchasing,Current,AVV7,420,Qualification,AVV7,AVV7,BSB41615,Purchasing,BSB41615 Certificate IV in Purchasing
+BSB41715,Certificate IV in,Recordkeeping,Current,AVV1,415,Qualification,AVV1,AVV1,BSB41715,Recordkeeping,BSB41715 Certificate IV in Recordkeeping
+BSB41915,Certificate IV in,Business (Governance),Current,AVU3,530,Qualification,AVU3,AVU3,BSB41915,Business (Governance),BSB41915 Certificate IV in Business (Governance)
+BSB42015,Certificate IV in,Leadership and Management,Current,AVR3,460,Qualification,AVR3,AVR3,BSB42015,Leadership and Management,BSB42015 Certificate IV in Leadership and Management
+BSB42115,Certificate IV in,Library and Information Services,Current,AZK3,712,Qualification,AZK3,AZK3,BSB42115,Library and Information Services,BSB42115 Certificate IV in Library and Information Services
+BSB42215,Certificate IV in,Legal Services,Current,AVR9,620,Qualification,AVR9,AVR9,BSB42215,Legal Services,BSB42215 Certificate IV in Legal Services
+BSB42315,Certificate IV in,Environmental Management and Sustainability,Current,AZJ9,305,Qualification,AZJ9,AZJ9,BSB42315,Environmental Management and Sustainability,BSB42315 Certificate IV in Environmental Management and Sustainability
+BSB42415,Certificate IV in,Marketing and Communication,Current,AZJ8,495,Qualification,AZJ8,AZJ8,BSB42415,Marketing and Communication,BSB42415 Certificate IV in Marketing and Communication
+BSB42515,Certificate IV in,Small Business Management,Current,AZI9,430,Qualification,AZI9,AZI9,BSB42515,Small Business Management,BSB42515 Certificate IV in Small Business Management
+BSB42615,Certificate IV in,New Small Business,Current,AZI1,420,Qualification,AZI1,AZI1,BSB42615,New Small Business,BSB42615 Certificate IV in New Small Business
+BSB50115,Diploma of,Advertising,Replaced,AVU4,500,Qualification,AVU4,AVU4,BSB50115,Advertising,BSB50115 Diploma of Advertising
+BSB50215,Diploma of,Business,Current,AVU9,405,Qualification,AVU9,AVU9,BSB50215,Business,BSB50215 Diploma of Business
+BSB50315,Diploma of,Customer Engagement,Current,AVV8,550,Qualification,AVV8,AVV8,BSB50315,Customer Engagement,BSB50315 Diploma of Customer Engagement
+BSB50415,Diploma of,Business Administration,Current,AVV5,415,Qualification,AVV5,AVV5,BSB50415,Business Administration,BSB50415 Diploma of Business Administration
+BSB50515,Diploma of,Franchising,Current,AVT2,380,Qualification,AVT2,AVT2,BSB50515,Franchising,BSB50515 Diploma of Franchising
+BSB50615,Diploma of,Human Resources Management,Current,AVT7,540,Qualification,AVT7,AVT7,BSB50615,Human Resources Management,BSB50615 Diploma of Human Resources Management
+BSB50715,Diploma of,Business (Governance),Current,AVU2,610,Qualification,AVU2,AVU2,BSB50715,Business (Governance),BSB50715 Diploma of Business (Governance)
+BSB50815,Diploma of,International Business,Current,AVT5,370,Qualification,AVT5,AVT5,BSB50815,International Business,BSB50815 Diploma of International Business
+BSB51215,Diploma of,Marketing,Replaced,AVW6,390,Qualification,AVW6,AVW6,BSB51215,Marketing,BSB51215 Diploma of Marketing
+BSB51315,Diploma of,Work Health and Safety,Current,AVV6,450,Qualification,AVV6,AVV6,BSB51315,Work Health and Safety,BSB51315 Diploma of Work Health and Safety
+BSB51415,Diploma of,Project Management,Current,AVW5,530,Qualification,AVW5,AVW5,BSB51415,Project Management,BSB51415 Diploma of Project Management
+BSB51515,Diploma of,Purchasing,Current,AVW1,405,Qualification,AVW1,AVW1,BSB51515,Purchasing,BSB51515 Diploma of Purchasing
+BSB51615,Diploma of,Quality Auditing,Current,AVS3,355,Qualification,AVS3,AVS3,BSB51615,Quality Auditing,BSB51615 Diploma of Quality Auditing
+BSB51715,Diploma of,Recordkeeping,Current,AVW7,360,Qualification,AVW7,AVW7,BSB51715,Recordkeeping,BSB51715 Diploma of Recordkeeping
+BSB51915,Diploma of,Leadership and Management,Current,AVU0,665,Qualification,AVU0,AVU0,BSB51915,Leadership and Management,BSB51915 Diploma of Leadership and Management
+BSB52015,Diploma of,Conveyancing,Current,AVV4,625,Qualification,AVV4,AVV4,BSB52015,Conveyancing,BSB52015 Diploma of Conveyancing
+BSB52115,Diploma of,Library and Information Services,Current,AZJ4,1165,Qualification,AZJ4,AZJ4,BSB52115,Library and Information Services,BSB52115 Diploma of Library and Information Services
+BSB52215,Diploma of,Legal Services,Current,AVS5,480,Qualification,AVS5,AVS5,BSB52215,Legal Services,BSB52215 Diploma of Legal Services
+BSB52315,Diploma of,Governance,Current,AZJ0,590,Qualification,AZJ0,AZJ0,BSB52315,Governance,BSB52315 Diploma of Governance
+BSB52415,Diploma of,Marketing and Communication,Current,AZK1,625,Qualification,AZK1,AZK1,BSB52415,Marketing and Communication,BSB52415 Diploma of Marketing and Communication
+BSB60115,Advanced Diploma of,Advertising,Replaced,AVW2,540,Qualification,AVW2,AVW2,BSB60115,Advertising,BSB60115 Advanced Diploma of Advertising
+BSB60215,Advanced Diploma of,Business,Current,AVV2,450,Qualification,AVV2,AVV2,BSB60215,Business,BSB60215 Advanced Diploma of Business
+BSB60515,Advanced Diploma of,Marketing,Replaced,AVS1,460,Qualification,AVS1,AVS1,BSB60515,Marketing,BSB60515 Advanced Diploma of Marketing
+BSB60615,Advanced Diploma of,Work Health and Safety,Current,AVR0,460,Qualification,AVR0,AVR0,BSB60615,Work Health and Safety,BSB60615 Advanced Diploma of Work Health and Safety
+BSB60815,Advanced Diploma of,Recordkeeping,Current,AVT9,430,Qualification,AVT9,AVT9,BSB60815,Recordkeeping,BSB60815 Advanced Diploma of Recordkeeping
+BSB60915,Advanced Diploma of,Management (Human Resources),Current,AVR1,410,Qualification,AVR1,AVR1,BSB60915,Management (Human Resources),BSB60915 Advanced Diploma of Management (Human Resources)
+BSB61015,Advanced Diploma of,Leadership and Management,Current,AVW8,720,Qualification,AVW8,AVW8,BSB61015,Leadership and Management,BSB61015 Advanced Diploma of Leadership and Management
+BSB61115,Advanced Diploma of,Conveyancing,Current,AVU5,935,Qualification,AVU5,AVU5,BSB61115,Conveyancing,BSB61115 Advanced Diploma of Conveyancing
+BSB61215,Advanced Diploma of,Program Management,Current,AVR8,625,Qualification,AVR8,AVR8,BSB61215,Program Management,BSB61215 Advanced Diploma of Program Management
+BSB61315,Advanced Diploma of,Marketing and Communication,Current,AZJ7,730,Qualification,AZJ7,AZJ7,BSB61315,Marketing and Communication,BSB61315 Advanced Diploma of Marketing and Communication
+BSB80215,Graduate Diploma of,Strategic Leadership,Current,AVT1,630,Qualification,AVT1,AVT1,BSB80215,Strategic Leadership,BSB80215 Graduate Diploma of Strategic Leadership
+BSB80315,Graduate Certificate In,Leadership Diversity,Current,AVQ8,290,Qualification,AVQ8,AVQ8,BSB80315,Leadership Diversity,BSB80315 Graduate Certificate In Leadership Diversity
+BSB80415,Graduate Diploma of,Portfolio Management,Current,AVW4,590,Qualification,AVW4,AVW4,BSB80415,Portfolio Management,BSB80415 Graduate Diploma of Portfolio Management
+BSB80515,Graduate Certificate In,Management (Learning),Current,AZH7,320,Qualification,AZH7,AZH7,BSB80515,Management (Learning),BSB80515 Graduate Certificate In Management (Learning)
+BSB80615,Graduate Diploma of,Management (Learning),Current,AZJ1,590,Qualification,AZJ1,AZJ1,BSB80615,Management (Learning),BSB80615 Graduate Diploma of Management (Learning)
+CUA10113,Certificate I in,Dance,Current,J690,180,Qualification,J690,J690,CUA10113,Dance,CUA10113 Certificate I in Dance
+CUA10113,Certificate I in,Dance,Current,J690,180,Qualification,J690,J690,CUA10113,Dance,CUA10113 Certificate I in Dance
+CUA10215,Certificate I in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZN3,225,Qualification,AZN3,AZN3,CUA10215,Aboriginal and Torres Strait Islander Cultural Arts,CUA10215 Certificate I in Aboriginal and Torres Strait Islander Cultural Arts
+CUA10215,Certificate I in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZN3,225,Qualification,AZN3,AZN3,CUA10215,Aboriginal and Torres Strait Islander Cultural Arts,CUA10215 Certificate I in Aboriginal and Torres Strait Islander Cultural Arts
+CUA10315,Certificate I in,Visual Arts,Current,AZK5,215,Qualification,AZK5,AZK5,CUA10315,Visual Arts,CUA10315 Certificate I in Visual Arts
+CUA10315,Certificate I in,Visual Arts,Current,AZK5,215,Qualification,AZK5,AZK5,CUA10315,Visual Arts,CUA10315 Certificate I in Visual Arts
+CUA20113,Certificate II in,Dance,Current,J691,380,Qualification,J691,J691,CUA20113,Dance,CUA20113 Certificate II in Dance
+CUA20113,Certificate II in,Dance,Current,J691,380,Qualification,J691,J691,CUA20113,Dance,CUA20113 Certificate II in Dance
+CUA20215,Certificate II in,Creative Industries,Current,AZN1,250,Qualification,AZN1,AZN1,CUA20215,Creative Industries,CUA20215 Certificate II in Creative Industries
+CUA20215,Certificate II in,Creative Industries,Current,AZN1,250,Qualification,AZN1,AZN1,CUA20215,Creative Industries,CUA20215 Certificate II in Creative Industries
+CUA20315,Certificate II in,Aboriginal and Torres Strait Islander Visual Arts Industry Work,Current,AZL0,250,Qualification,AZL0,AZL0,CUA20315,Aboriginal and Torres Strait Islander Visual Arts Industry Work,CUA20315 Certificate II in Aboriginal and Torres Strait Islander Visual Arts Industry Work
+CUA20315,Certificate II in,Aboriginal and Torres Strait Islander Visual Arts Industry Work,Current,AZL0,250,Qualification,AZL0,AZL0,CUA20315,Aboriginal and Torres Strait Islander Visual Arts Industry Work,CUA20315 Certificate II in Aboriginal and Torres Strait Islander Visual Arts Industry Work
+CUA20415,Certificate II in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZN8,365,Qualification,AZN8,AZN8,CUA20415,Aboriginal and Torres Strait Islander Cultural Arts,CUA20415 Certificate II in Aboriginal and Torres Strait Islander Cultural Arts
+CUA20415,Certificate II in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZN8,365,Qualification,AZN8,AZN8,CUA20415,Aboriginal and Torres Strait Islander Cultural Arts,CUA20415 Certificate II in Aboriginal and Torres Strait Islander Cultural Arts
+CUA20515,Certificate II in,Information and Cultural Services,Current,AZM9,363,Qualification,AZM9,AZM9,CUA20515,Information and Cultural Services,CUA20515 Certificate II in Information and Cultural Services
+CUA20515,Certificate II in,Information and Cultural Services,Current,AZM9,363,Qualification,AZM9,AZM9,CUA20515,Information and Cultural Services,CUA20515 Certificate II in Information and Cultural Services
+CUA20615,Certificate II in,Music Industry,Current,AZM6,260,Qualification,AZM6,AZM6,CUA20615,Music Industry,CUA20615 Certificate II in Music Industry
+CUA20615,Certificate II in,Music Industry,Current,AZM6,260,Qualification,AZM6,AZM6,CUA20615,Music Industry,CUA20615 Certificate II in Music Industry
+CUA20715,Certificate II in,Visual Arts,Current,AZN4,355,Qualification,AZN4,AZN4,CUA20715,Visual Arts,CUA20715 Certificate II in Visual Arts
+CUA20715,Certificate II in,Visual Arts,Current,AZN4,355,Qualification,AZN4,AZN4,CUA20715,Visual Arts,CUA20715 Certificate II in Visual Arts
+CUA30113,Certificate III in,Dance,Current,J693,540,Qualification,J693,J693,CUA30113,Dance,CUA30113 Certificate III in Dance
+CUA30113,Certificate III in,Dance,Current,J693,540,Qualification,J693,J693,CUA30113,Dance,CUA30113 Certificate III in Dance
+CUA30213,Certificate III in,"Community Dance, Theatre and Events",Current,J694,550,Qualification,J694,J694,CUA30213,"Community Dance, Theatre and Events","CUA30213 Certificate III in Community Dance, Theatre and Events"
+CUA30213,Certificate III in,"Community Dance, Theatre and Events",Current,J694,550,Qualification,J694,J694,CUA30213,"Community Dance, Theatre and Events","CUA30213 Certificate III in Community Dance, Theatre and Events"
+CUA30313,Certificate III in,Assistant Dance Teaching,Current,J695,360,Qualification,J695,J695,CUA30313,Assistant Dance Teaching,CUA30313 Certificate III in Assistant Dance Teaching
+CUA30313,Certificate III in,Assistant Dance Teaching,Current,J695,360,Qualification,J695,J695,CUA30313,Assistant Dance Teaching,CUA30313 Certificate III in Assistant Dance Teaching
+CUA30415,Certificate III in,Live Production and Services,Current,AZM4,489,Qualification,AZM4,AZM4,CUA30415,Live Production and Services,CUA30415 Certificate III in Live Production and Services
+CUA30415,Certificate III in,Live Production and Services,Current,AZM4,489,Qualification,AZM4,AZM4,CUA30415,Live Production and Services,CUA30415 Certificate III in Live Production and Services
+CUA30515,Certificate III in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZN9,535,Qualification,AZN9,AZN9,CUA30515,Aboriginal and Torres Strait Islander Cultural Arts,CUA30515 Certificate III in Aboriginal and Torres Strait Islander Cultural Arts
+CUA30515,Certificate III in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZN9,535,Qualification,AZN9,AZN9,CUA30515,Aboriginal and Torres Strait Islander Cultural Arts,CUA30515 Certificate III in Aboriginal and Torres Strait Islander Cultural Arts
+CUA30615,Certificate III in,Arts Administration,Current,AZM8,490,Qualification,AZM8,AZM8,CUA30615,Arts Administration,CUA30615 Certificate III in Arts Administration
+CUA30615,Certificate III in,Arts Administration,Current,AZM8,490,Qualification,AZM8,AZM8,CUA30615,Arts Administration,CUA30615 Certificate III in Arts Administration
+CUA30715,Certificate III in,Design Fundamentals,Current,AZN7,515,Qualification,AZN7,AZN7,CUA30715,Design Fundamentals,CUA30715 Certificate III in Design Fundamentals
+CUA30715,Certificate III in,Design Fundamentals,Current,AZN7,515,Qualification,AZN7,AZN7,CUA30715,Design Fundamentals,CUA30715 Certificate III in Design Fundamentals
+CUA30815,Certificate III in,Broadcast Technology,Current,AZM3,435,Qualification,AZM3,AZM3,CUA30815,Broadcast Technology,CUA30815 Certificate III in Broadcast Technology
+CUA30815,Certificate III in,Broadcast Technology,Current,AZM3,435,Qualification,AZM3,AZM3,CUA30815,Broadcast Technology,CUA30815 Certificate III in Broadcast Technology
+CUA30915,Certificate III in,Music Industry,Current,AZK9,345,Qualification,AZK9,AZK9,CUA30915,Music Industry,CUA30915 Certificate III in Music Industry
+CUA30915,Certificate III in,Music Industry,Current,AZK9,345,Qualification,AZK9,AZK9,CUA30915,Music Industry,CUA30915 Certificate III in Music Industry
+CUA31015,Certificate III in,Screen and Media,Current,AZO4,400,Qualification,AZO4,AZO4,CUA31015,Screen and Media,CUA31015 Certificate III in Screen and Media
+CUA31015,Certificate III in,Screen and Media,Current,AZO4,400,Qualification,AZO4,AZO4,CUA31015,Screen and Media,CUA31015 Certificate III in Screen and Media
+CUA31115,Certificate III in,Visual Arts,Current,AZN2,535,Qualification,AZN2,AZN2,CUA31115,Visual Arts,CUA31115 Certificate III in Visual Arts
+CUA31115,Certificate III in,Visual Arts,Current,AZN2,535,Qualification,AZN2,AZN2,CUA31115,Visual Arts,CUA31115 Certificate III in Visual Arts
+CUA40113,Certificate IV in,Dance,Current,J697,690,Qualification,J697,J697,CUA40113,Dance,CUA40113 Certificate IV in Dance
+CUA40113,Certificate IV in,Dance,Current,J697,690,Qualification,J697,J697,CUA40113,Dance,CUA40113 Certificate IV in Dance
+CUA40213,Certificate IV in,Community Culture,Current,J698,745,Qualification,J698,J698,CUA40213,Community Culture,CUA40213 Certificate IV in Community Culture
+CUA40213,Certificate IV in,Community Culture,Current,J698,745,Qualification,J698,J698,CUA40213,Community Culture,CUA40213 Certificate IV in Community Culture
+CUA40313,Certificate IV in,Dance Teaching and Management,Current,J699,540,Qualification,J699,J699,CUA40313,Dance Teaching and Management,CUA40313 Certificate IV in Dance Teaching and Management
+CUA40313,Certificate IV in,Dance Teaching and Management,Current,J699,540,Qualification,J699,J699,CUA40313,Dance Teaching and Management,CUA40313 Certificate IV in Dance Teaching and Management
+CUA40415,Certificate IV in,Live Production and Technical Services,Current,AZO0,664,Qualification,AZO0,AZO0,CUA40415,Live Production and Technical Services,CUA40415 Certificate IV in Live Production and Technical Services
+CUA40415,Certificate IV in,Live Production and Technical Services,Current,AZO0,664,Qualification,AZO0,AZO0,CUA40415,Live Production and Technical Services,CUA40415 Certificate IV in Live Production and Technical Services
+CUA40513,Certificate IV in,Musical Theatre,Current,J701,825,Qualification,J701,J701,CUA40513,Musical Theatre,CUA40513 Certificate IV in Musical Theatre
+CUA40513,Certificate IV in,Musical Theatre,Current,J701,825,Qualification,J701,J701,CUA40513,Musical Theatre,CUA40513 Certificate IV in Musical Theatre
+CUA40615,Certificate IV in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZK4,660,Qualification,AZK4,AZK4,CUA40615,Aboriginal and Torres Strait Islander Cultural Arts,CUA40615 Certificate IV in Aboriginal and Torres Strait Islander Cultural Arts
+CUA40615,Certificate IV in,Aboriginal and Torres Strait Islander Cultural Arts,Current,AZK4,660,Qualification,AZK4,AZK4,CUA40615,Aboriginal and Torres Strait Islander Cultural Arts,CUA40615 Certificate IV in Aboriginal and Torres Strait Islander Cultural Arts
+CUA40715,Certificate IV in,Design,Current,AZN5,665,Qualification,AZN5,AZN5,CUA40715,Design,CUA40715 Certificate IV in Design
+CUA40715,Certificate IV in,Design,Current,AZN5,665,Qualification,AZN5,AZN5,CUA40715,Design,CUA40715 Certificate IV in Design
+CUA40815,Certificate IV in,Arts Administration,Current,AZL4,640,Qualification,AZL4,AZL4,CUA40815,Arts Administration,CUA40815 Certificate IV in Arts Administration
+CUA40815,Certificate IV in,Arts Administration,Current,AZL4,640,Qualification,AZL4,AZL4,CUA40815,Arts Administration,CUA40815 Certificate IV in Arts Administration
+CUA40915,Certificate IV in,Music Industry,Current,AZN6,535,Qualification,AZN6,AZN6,CUA40915,Music Industry,CUA40915 Certificate IV in Music Industry
+CUA40915,Certificate IV in,Music Industry,Current,AZN6,535,Qualification,AZN6,AZN6,CUA40915,Music Industry,CUA40915 Certificate IV in Music Industry
+CUA41015,Certificate IV in,Broadcast Technology,Current,AZL2,640,Qualification,AZL2,AZL2,CUA41015,Broadcast Technology,CUA41015 Certificate IV in Broadcast Technology
+CUA41015,Certificate IV in,Broadcast Technology,Current,AZL2,640,Qualification,AZL2,AZL2,CUA41015,Broadcast Technology,CUA41015 Certificate IV in Broadcast Technology
+CUA41115,Certificate IV in,Photography and Photo Imaging,Current,AZM5,640,Qualification,AZM5,AZM5,CUA41115,Photography and Photo Imaging,CUA41115 Certificate IV in Photography and Photo Imaging
+CUA41115,Certificate IV in,Photography and Photo Imaging,Current,AZM5,640,Qualification,AZM5,AZM5,CUA41115,Photography and Photo Imaging,CUA41115 Certificate IV in Photography and Photo Imaging
+CUA41215,Certificate IV in,Screen and Media,Current,AZK7,570,Qualification,AZK7,AZK7,CUA41215,Screen and Media,CUA41215 Certificate IV in Screen and Media
+CUA41215,Certificate IV in,Screen and Media,Current,AZK7,570,Qualification,AZK7,AZK7,CUA41215,Screen and Media,CUA41215 Certificate IV in Screen and Media
+CUA41315,Certificate IV in,Visual Arts,Current,AZO2,630,Qualification,AZO2,AZO2,CUA41315,Visual Arts,CUA41315 Certificate IV in Visual Arts
+CUA41315,Certificate IV in,Visual Arts,Current,AZO2,630,Qualification,AZO2,AZO2,CUA41315,Visual Arts,CUA41315 Certificate IV in Visual Arts
+CUA50113,Diploma of,Dance (Elite Performance),Current,J702,1358,Qualification,J702,J702,CUA50113,Dance (Elite Performance),CUA50113 Diploma of Dance (Elite Performance)
+CUA50113,Diploma of,Dance (Elite Performance),Current,J702,1358,Qualification,J702,J702,CUA50113,Dance (Elite Performance),CUA50113 Diploma of Dance (Elite Performance)
+CUA50213,Diploma of,Musical Theatre,Current,J703,985,Qualification,J703,J703,CUA50213,Musical Theatre,CUA50213 Diploma of Musical Theatre
+CUA50213,Diploma of,Musical Theatre,Current,J703,985,Qualification,J703,J703,CUA50213,Musical Theatre,CUA50213 Diploma of Musical Theatre
+CUA50313,Diploma of,Dance Teaching and Management,Current,J704,960,Qualification,J704,J704,CUA50313,Dance Teaching and Management,CUA50313 Diploma of Dance Teaching and Management
+CUA50313,Diploma of,Dance Teaching and Management,Current,J704,960,Qualification,J704,J704,CUA50313,Dance Teaching and Management,CUA50313 Diploma of Dance Teaching and Management
+CUA50415,Diploma of,Live Production and Technical Services,Current,AZK8,1009,Qualification,AZK8,AZK8,CUA50415,Live Production and Technical Services,CUA50415 Diploma of Live Production and Technical Services
+CUA50415,Diploma of,Live Production and Technical Services,Current,AZK8,1009,Qualification,AZK8,AZK8,CUA50415,Live Production and Technical Services,CUA50415 Diploma of Live Production and Technical Services
+CUA50513,Diploma of,Live Production Design,Current,J706,1020,Qualification,J706,J706,CUA50513,Live Production Design,CUA50513 Diploma of Live Production Design
+CUA50513,Diploma of,Live Production Design,Current,J706,1020,Qualification,J706,J706,CUA50513,Live Production Design,CUA50513 Diploma of Live Production Design
+CUA50615,Diploma of,Aboriginal and Torres Strait Islander Visual Arts Industry Work,Current,AZM1,650,Qualification,AZM1,AZM1,CUA50615,Aboriginal and Torres Strait Islander Visual Arts Industry Work,CUA50615 Diploma of Aboriginal and Torres Strait Islander Visual Arts Industry Work
+CUA50615,Diploma of,Aboriginal and Torres Strait Islander Visual Arts Industry Work,Current,AZM1,650,Qualification,AZM1,AZM1,CUA50615,Aboriginal and Torres Strait Islander Visual Arts Industry Work,CUA50615 Diploma of Aboriginal and Torres Strait Islander Visual Arts Industry Work
+CUA50715,Diploma of,Graphic Design,Current,AZK6,920,Qualification,AZK6,AZK6,CUA50715,Graphic Design,CUA50715 Diploma of Graphic Design
+CUA50715,Diploma of,Graphic Design,Current,AZK6,920,Qualification,AZK6,AZK6,CUA50715,Graphic Design,CUA50715 Diploma of Graphic Design
+CUA50815,Diploma of,Music Industry,Current,AZN0,757,Qualification,AZN0,AZN0,CUA50815,Music Industry,CUA50815 Diploma of Music Industry
+CUA50815,Diploma of,Music Industry,Current,AZN0,757,Qualification,AZN0,AZN0,CUA50815,Music Industry,CUA50815 Diploma of Music Industry
+CUA50915,Diploma of,Photography and Photo Imaging,Current,AZM2,950,Qualification,AZM2,AZM2,CUA50915,Photography and Photo Imaging,CUA50915 Diploma of Photography and Photo Imaging
+CUA50915,Diploma of,Photography and Photo Imaging,Current,AZM2,950,Qualification,AZM2,AZM2,CUA50915,Photography and Photo Imaging,CUA50915 Diploma of Photography and Photo Imaging
+CUA51015,Diploma of,Screen and Media,Current,AZL8,705,Qualification,AZL8,AZL8,CUA51015,Screen and Media,CUA51015 Diploma of Screen and Media
+CUA51015,Diploma of,Screen and Media,Current,AZL8,705,Qualification,AZL8,AZL8,CUA51015,Screen and Media,CUA51015 Diploma of Screen and Media
+CUA51115,Diploma of,Visual Arts,Current,AZL3,744,Qualification,AZL3,AZL3,CUA51115,Visual Arts,CUA51115 Diploma of Visual Arts
+CUA51115,Diploma of,Visual Arts,Current,AZL3,744,Qualification,AZL3,AZL3,CUA51115,Visual Arts,CUA51115 Diploma of Visual Arts
+CUA51215,Diploma of,Ceramics,Current,AZL1,1010,Qualification,AZL1,AZL1,CUA51215,Ceramics,CUA51215 Diploma of Ceramics
+CUA51215,Diploma of,Ceramics,Current,AZL1,1010,Qualification,AZL1,AZL1,CUA51215,Ceramics,CUA51215 Diploma of Ceramics
+CUA60113,Advanced Diploma of,Dance (Elite Performance),Current,J707,1735,Qualification,J707,J707,CUA60113,Dance (Elite Performance),CUA60113 Advanced Diploma of Dance (Elite Performance)
+CUA60113,Advanced Diploma of,Dance (Elite Performance),Current,J707,1735,Qualification,J707,J707,CUA60113,Dance (Elite Performance),CUA60113 Advanced Diploma of Dance (Elite Performance)
+CUA60213,Advanced Diploma of,Live Production and Management Services,Current,J708,1080,Qualification,J708,J708,CUA60213,Live Production and Management Services,CUA60213 Advanced Diploma of Live Production and Management Services
+CUA60213,Advanced Diploma of,Live Production and Management Services,Current,J708,1080,Qualification,J708,J708,CUA60213,Live Production and Management Services,CUA60213 Advanced Diploma of Live Production and Management Services
+CUA60315,Advanced Diploma of,Graphic Design,Current,AZL7,760,Qualification,AZL7,AZL7,CUA60315,Graphic Design,CUA60315 Advanced Diploma of Graphic Design
+CUA60315,Advanced Diploma of,Graphic Design,Current,AZL7,760,Qualification,AZL7,AZL7,CUA60315,Graphic Design,CUA60315 Advanced Diploma of Graphic Design
+CUA60415,Advanced Diploma of,Creative Product Development,Current,AZL9,770,Qualification,AZL9,AZL9,CUA60415,Creative Product Development,CUA60415 Advanced Diploma of Creative Product Development
+CUA60415,Advanced Diploma of,Creative Product Development,Current,AZL9,770,Qualification,AZL9,AZL9,CUA60415,Creative Product Development,CUA60415 Advanced Diploma of Creative Product Development
+CUA60515,Advanced Diploma of,Music Industry,Current,AZM7,752,Qualification,AZM7,AZM7,CUA60515,Music Industry,CUA60515 Advanced Diploma of Music Industry
+CUA60515,Advanced Diploma of,Music Industry,Current,AZM7,752,Qualification,AZM7,AZM7,CUA60515,Music Industry,CUA60515 Advanced Diploma of Music Industry
+CUA60615,Advanced Diploma of,Screen and Media,Current,AZO1,785,Qualification,AZO1,AZO1,CUA60615,Screen and Media,CUA60615 Advanced Diploma of Screen and Media
+CUA60615,Advanced Diploma of,Screen and Media,Current,AZO1,785,Qualification,AZO1,AZO1,CUA60615,Screen and Media,CUA60615 Advanced Diploma of Screen and Media
+CUA60715,Advanced Diploma of,Visual Arts,Current,AZL6,675,Qualification,AZL6,AZL6,CUA60715,Visual Arts,CUA60715 Advanced Diploma of Visual Arts
+CUA60715,Advanced Diploma of,Visual Arts,Current,AZL6,675,Qualification,AZL6,AZL6,CUA60715,Visual Arts,CUA60715 Advanced Diploma of Visual Arts
+FNS10115,Certificate I in,Financial Services,Current,AWB1,180,Qualification,AWB1,AWB1,FNS10115,Financial Services,FNS10115 Certificate I in Financial Services
+FNS20115,Certificate II in,Financial Services,Current,AVX4,270,Qualification,AVX4,AVX4,FNS20115,Financial Services,FNS20115 Certificate II in Financial Services
+FNS30115,Certificate III in,Financial Services,Current,AWA5,450,Qualification,AWA5,AWA5,FNS30115,Financial Services,FNS30115 Certificate III in Financial Services
+FNS30215,Certificate III in,Personal Injury Management,Current,AVX0,390,Qualification,AVX0,AVX0,FNS30215,Personal Injury Management,FNS30215 Certificate III in Personal Injury Management
+FNS30315,Certificate III in,Accounts Administration,Current,AWA4,440,Qualification,AWA4,AWA4,FNS30315,Accounts Administration,FNS30315 Certificate III in Accounts Administration
+FNS30515,Certificate III in,General Insurance,Current,AVZ8,425,Qualification,AVZ8,AVZ8,FNS30515,General Insurance,FNS30515 Certificate III in General Insurance
+FNS30615,Certificate III in,Insurance Broking,Current,AVZ3,420,Qualification,AVZ3,AVZ3,FNS30615,Insurance Broking,FNS30615 Certificate III in Insurance Broking
+FNS40115,Certificate IV in,Credit Management,Current,AWC3,345,Qualification,AWC3,AWC3,FNS40115,Credit Management,FNS40115 Certificate IV in Credit Management
+FNS40215,Certificate IV in,Bookkeeping,Current,AWB2,540,Qualification,AWB2,AWB2,FNS40215,Bookkeeping,FNS40215 Certificate IV in Bookkeeping
+FNS40615,Certificate IV in,Accounting,Current,AWF3,595,Qualification,AWF3,AWF3,FNS40615,Accounting,FNS40615 Certificate IV in Accounting
+FNS40715,Certificate IV in,Financial Practice Support,Current,AWC4,430,Qualification,AWC4,AWC4,FNS40715,Financial Practice Support,FNS40715 Certificate IV in Financial Practice Support
+FNS40815,Certificate IV in,Finance and Mortgage Broking,Current,AWF6,355,Qualification,AWF6,AWF6,FNS40815,Finance and Mortgage Broking,FNS40815 Certificate IV in Finance and Mortgage Broking
+FNS40915,Certificate IV in,Superannuation,Current,AVZ0,500,Qualification,AVZ0,AVZ0,FNS40915,Superannuation,FNS40915 Certificate IV in Superannuation
+FNS41115,Certificate IV in,Financial Markets Operations,Current,AVY5,540,Qualification,AVY5,AVY5,FNS41115,Financial Markets Operations,FNS41115 Certificate IV in Financial Markets Operations
+FNS41415,Certificate IV in,General Insurance,Current,AWD0,630,Qualification,AWD0,AWD0,FNS41415,General Insurance,FNS41415 Certificate IV in General Insurance
+FNS41515,Certificate IV in,Life Insurance,Current,AVX2,470,Qualification,AVX2,AVX2,FNS41515,Life Insurance,FNS41515 Certificate IV in Life Insurance
+FNS41715,Certificate IV in,Insurance Broking,Current,AWG0,510,Qualification,AWG0,AWG0,FNS41715,Insurance Broking,FNS41715 Certificate IV in Insurance Broking
+FNS41815,Certificate IV in,Financial Services,Current,AVY4,510,Qualification,AVY4,AVY4,FNS41815,Financial Services,FNS41815 Certificate IV in Financial Services
+FNS42015,Certificate IV in,Banking Services,Current,AVZ5,390,Qualification,AVZ5,AVZ5,FNS42015,Banking Services,FNS42015 Certificate IV in Banking Services
+FNS50215,Diploma of,Accounting,Current,AVX7,580,Qualification,AVX7,AVX7,FNS50215,Accounting,FNS50215 Diploma of Accounting
+FNS50315,Diploma of,Finance and Mortgage Broking Management,Current,AWC1,660,Qualification,AWC1,AWC1,FNS50315,Finance and Mortgage Broking Management,FNS50315 Diploma of Finance and Mortgage Broking Management
+FNS50615,Diploma of,Financial Planning,Current,AVX5,780,Qualification,AVX5,AVX5,FNS50615,Financial Planning,FNS50615 Diploma of Financial Planning
+FNS50715,Diploma of,Superannuation,Current,AWD2,740,Qualification,AWD2,AWD2,FNS50715,Superannuation,FNS50715 Diploma of Superannuation
+FNS50815,Diploma of,Integrated Risk Management,Current,AWC5,540,Qualification,AWC5,AWC5,FNS50815,Integrated Risk Management,FNS50815 Diploma of Integrated Risk Management
+FNS50915,Diploma of,Banking Services Management,Current,AVX9,650,Qualification,AVX9,AVX9,FNS50915,Banking Services Management,FNS50915 Diploma of Banking Services Management
+FNS51015,Diploma of,Financial Markets,Current,AWC2,450,Qualification,AWC2,AWC2,FNS51015,Financial Markets,FNS51015 Diploma of Financial Markets
+FNS51115,Diploma of,General Insurance,Current,AWE4,670,Qualification,AWE4,AWE4,FNS51115,General Insurance,FNS51115 Diploma of General Insurance
+FNS51215,Diploma of,Insurance Broking,Current,AWB4,520,Qualification,AWB4,AWB4,FNS51215,Insurance Broking,FNS51215 Diploma of Insurance Broking
+FNS51315,Diploma of,Life Insurance,Current,AWB9,695,Qualification,AWB9,AWB9,FNS51315,Life Insurance,FNS51315 Diploma of Life Insurance
+FNS51415,Diploma of,Loss Adjusting,Current,AWF7,870,Qualification,AWF7,AWF7,FNS51415,Loss Adjusting,FNS51415 Diploma of Loss Adjusting
+FNS51515,Diploma of,Credit Management,Current,AWA8,505,Qualification,AWA8,AWA8,FNS51515,Credit Management,FNS51515 Diploma of Credit Management
+FNS51615,Diploma of,Securitisation,Current,AWC9,565,Qualification,AWC9,AWC9,FNS51615,Securitisation,FNS51615 Diploma of Securitisation
+FNS51815,Diploma of,Financial Services,Current,AWB7,550,Qualification,AWB7,AWB7,FNS51815,Financial Services,FNS51815 Diploma of Financial Services
+FNS60115,Advanced Diploma of,Insurance Broking,Current,AWE0,650,Qualification,AWE0,AWE0,FNS60115,Insurance Broking,FNS60115 Advanced Diploma of Insurance Broking
+FNS60215,Advanced Diploma of,Accounting,Current,AWD8,770,Qualification,AWD8,AWD8,FNS60215,Accounting,FNS60215 Advanced Diploma of Accounting
+FNS60415,Advanced Diploma of,Financial Planning,Current,AWD6,560,Qualification,AWD6,AWD6,FNS60415,Financial Planning,FNS60415 Advanced Diploma of Financial Planning
+FNS60515,Advanced Diploma of,Superannuation,Current,AWA9,710,Qualification,AWA9,AWA9,FNS60515,Superannuation,FNS60515 Advanced Diploma of Superannuation
+FNS60615,Advanced Diploma of,Banking Services Management,Current,AVZ9,710,Qualification,AVZ9,AVZ9,FNS60615,Banking Services Management,FNS60615 Advanced Diploma of Banking Services Management
+FNS60715,Advanced Diploma of,Financial Licensing Management,Current,AVY8,650,Qualification,AVY8,AVY8,FNS60715,Financial Licensing Management,FNS60715 Advanced Diploma of Financial Licensing Management
+FNS60815,Advanced Diploma of,Integrated Risk Management,Current,AVZ1,650,Qualification,AVZ1,AVZ1,FNS60815,Integrated Risk Management,FNS60815 Advanced Diploma of Integrated Risk Management
+ICT10115,Certificate I in,"Information, Digital Media and Technology",Expired,AVY6,160,Qualification,AVY6,AVY6,ICT10115,"Information, Digital Media and Technology","ICT10115 Certificate I in Information, Digital Media and Technology"
+ICT20115,Certificate II in,"Information, Digital Media and Technology",Expired,AVZ2,370,Qualification,AVZ2,AVZ2,ICT20115,"Information, Digital Media and Technology","ICT20115 Certificate II in Information, Digital Media and Technology"
+ICT30115,Certificate III in,"Information, Digital Media and Technology",Expired,AWB0,610,Qualification,AWB0,AWB0,ICT30115,"Information, Digital Media and Technology","ICT30115 Certificate III in Information, Digital Media and Technology"
+ICT40115,Certificate IV in,Information Technology,Expired,AWB5,690,Qualification,AWB5,AWB5,ICT40115,Information Technology,ICT40115 Certificate IV in Information Technology
+ICT40120,Certificate IV in,Information Technology,Current,AC07,,Qualification,AC07,AC07,ICT40120,Information Technology,ICT40120 Certificate IV in Information Technology
+ICT40215,Certificate IV in,Information Technology Support,Expired,AVY7,705,Qualification,AVY7,AVY7,ICT40215,Information Technology Support,ICT40215 Certificate IV in Information Technology Support
+ICT40315,Certificate IV in,Web-Based Technologies,Expired,AWE7,705,Qualification,AWE7,AWE7,ICT40315,Web-Based Technologies,ICT40315 Certificate IV in Web-Based Technologies
+ICT40415,Certificate IV in,Information Technology Networking,Expired,AWG1,660,Qualification,AWG1,AWG1,ICT40415,Information Technology Networking,ICT40415 Certificate IV in Information Technology Networking
+ICT40515,Certificate IV in,Programming,Expired,AWF2,805,Qualification,AWF2,AWF2,ICT40515,Programming,ICT40515 Certificate IV in Programming
+ICT40615,Certificate IV in,Information Technology Testing,Expired,AWG2,695,Qualification,AWG2,AWG2,ICT40615,Information Technology Testing,ICT40615 Certificate IV in Information Technology Testing
+ICT40715,Certificate IV in,Systems Analysis and Design,Expired,AWD1,730,Qualification,AWD1,AWD1,ICT40715,Systems Analysis and Design,ICT40715 Certificate IV in Systems Analysis and Design
+ICT40815,Certificate IV in,Digital Media Technologies,Expired,AVZ6,700,Qualification,AVZ6,AVZ6,ICT40815,Digital Media Technologies,ICT40815 Certificate IV in Digital Media Technologies
+ICT40915,Certificate IV in,Digital and Interactive Games,Expired,AWE5,730,Qualification,AWE5,AWE5,ICT40915,Digital and Interactive Games,ICT40915 Certificate IV in Digital and Interactive Games
+ICT41015,Certificate IV in,Computer Systems Technology,Expired,AVZ7,810,Qualification,AVZ7,AVZ7,ICT41015,Computer Systems Technology,ICT41015 Certificate IV in Computer Systems Technology
+ICT50115,Diploma of,Information Technology,Expired,AWF1,610,Qualification,AWF1,AWF1,ICT50115,Information Technology,ICT50115 Diploma of Information Technology
+ICT50215,Diploma of,Digital and Interactive Games,Expired,AVZ4,700,Qualification,AVZ4,AVZ4,ICT50215,Digital and Interactive Games,ICT50215 Diploma of Digital and Interactive Games
+ICT50315,Diploma of,Information Technology Systems Administration,Current,AWE2,575,Qualification,AWE2,AWE2,ICT50315,Information Technology Systems Administration,ICT50315 Diploma of Information Technology Systems Administration
+ICT50415,Diploma of,Information Technology Networking,Current,AWD7,715,Qualification,AWD7,AWD7,ICT50415,Information Technology Networking,ICT50415 Diploma of Information Technology Networking
+ICT50515,Diploma of,Database Design and Development,Current,AWA1,685,Qualification,AWA1,AWA1,ICT50515,Database Design and Development,ICT50515 Diploma of Database Design and Development
+ICT50615,Diploma of,Website Development,Current,AWE3,810,Qualification,AWE3,AWE3,ICT50615,Website Development,ICT50615 Diploma of Website Development
+ICT50715,Diploma of,Software Development,Current,AWE6,655,Qualification,AWE6,AWE6,ICT50715,Software Development,ICT50715 Diploma of Software Development
+ICT50815,Diploma of,Systems Analysis and Design,Current,AVX8,645,Qualification,AVX8,AVX8,ICT50815,Systems Analysis and Design,ICT50815 Diploma of Systems Analysis and Design
+ICT50915,Diploma of,Digital Media Technologies,Current,AWD9,850,Qualification,AWD9,AWD9,ICT50915,Digital Media Technologies,ICT50915 Diploma of Digital Media Technologies
+ICT60115,Advanced Diploma of,Information Technology,Current,AWA0,580,Qualification,AWA0,AWA0,ICT60115,Information Technology,ICT60115 Advanced Diploma of Information Technology
+ICT60215,Advanced Diploma of,Network Security,Current,AVX6,555,Qualification,AVX6,AVX6,ICT60215,Network Security,ICT60215 Advanced Diploma of Network Security
+ICT60315,Advanced Diploma of,Information Technology Business Analysis,Current,AWA6,635,Qualification,AWA6,AWA6,ICT60315,Information Technology Business Analysis,ICT60315 Advanced Diploma of Information Technology Business Analysis
+ICT60415,Advanced Diploma of,Information Technology Project Management,Current,AWE1,650,Qualification,AWE1,AWE1,ICT60415,Information Technology Project Management,ICT60415 Advanced Diploma of Information Technology Project Management
+ICT60515,Advanced Diploma of,Computer Systems Technology,Current,AWA2,1105,Qualification,AWA2,AWA2,ICT60515,Computer Systems Technology,ICT60515 Advanced Diploma of Computer Systems Technology
+ICT80115,Graduate Certificate In,Information Technology and Strategic Management,Current,AWB8,320,Qualification,AWB8,AWB8,ICT80115,Information Technology and Strategic Management,ICT80115 Graduate Certificate In Information Technology and Strategic Management
+ICT80215,Graduate Certificate In,Information Technology Sustainability,Current,AWD4,280,Qualification,AWD4,AWD4,ICT80215,Information Technology Sustainability,ICT80215 Graduate Certificate In Information Technology Sustainability
+ICT80315,Graduate Certificate In,Telecommunications,Current,AVY1,225,Qualification,AVY1,AVY1,ICT80315,Telecommunications,ICT80315 Graduate Certificate In Telecommunications
+ICT80415,Graduate Diploma of,Telecommunications Network Engineering,Current,AWE9,490,Qualification,AWE9,AWE9,ICT80415,Telecommunications Network Engineering,ICT80415 Graduate Diploma of Telecommunications Network Engineering
+ICT80515,Graduate Diploma of,Telecommunications and Strategic Management,Current,AWF8,525,Qualification,AWF8,AWF8,ICT80515,Telecommunications and Strategic Management,ICT80515 Graduate Diploma of Telecommunications and Strategic Management

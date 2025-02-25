@@ -19,7 +19,7 @@ class UserController extends Controller
     {
         $data = User::latest()->paginate(5);
 
-        return view('users.index',compact('data'));
+        return view('users.index', compact('data'));
     }
 
     /**
