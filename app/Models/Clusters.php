@@ -11,7 +11,6 @@ class Clusters extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id',
         'code',
         'title',
         'qualification',
@@ -20,6 +19,10 @@ class Clusters extends Model
         'unit_2',
         'unit_3',
         'unit_4',
+        "unit_5",
+        "unit_6",
+        "unit_7",
+        "unit_8",
     ];
 
     public function course()

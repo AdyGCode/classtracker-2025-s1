@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('code');
             $table->string('title');
-            $table->string('qualification');
-            $table->string('qualification_code');
+            $table->string('qualification')->nullable();
+            $table->string('qualification_code')->nullable();
             $table->string('unit_1')->nullable();
             $table->string('unit_2')->nullable();
             $table->string('unit_3')->nullable();
@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('unit_6')->nullable();
             $table->string('unit_7')->nullable();
             $table->string('unit_8')->nullable();
+            $table->timestamps();
         });
     }
 

@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Courses extends Model
 {
@@ -19,6 +21,9 @@ class Courses extends Model
         'nominal_hours',
         'type',
         'qa',
+        'nat_code',
+        'nat_title',
+        'nat_code_title',
     ];
 
     /**

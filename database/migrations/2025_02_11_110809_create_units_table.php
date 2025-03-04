@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('national_code');
             $table->string('title');
-            $table->string('tga_status');
-            $table->string('state_code');
-            $table->string('nominal_hours');
+            $table->string('tga_status')->nullable();
+            $table->string('state_code')->nullable();
+            $table->string('nominal_hours')->nullable();
+            $table->timestamps();
         });
     }
 

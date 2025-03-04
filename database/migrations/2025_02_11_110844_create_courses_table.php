@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('nat_code');
             $table->string('nat_title');
             $table->string('nat_code_title');
+            $table->timestamps();
         });
     }
 
