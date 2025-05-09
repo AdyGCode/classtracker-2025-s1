@@ -28,15 +28,6 @@ Route::post('/login', [AuthApiController::class, 'login']);
 Route::get('/profile', [AuthApiController::class, 'profile'])->middleware(['auth:sanctum',]);
 //Route::post('/logout', [AuthApiController::class, 'logout'])->middleware(['auth:sanctum',]);
 
-
-Route::apiResource('users', UserApiController::class)
-    ->only(['index', 'show']);
-
-Route::middleware('auth:sanctum')->group(function () {
-    Route::apiResource('users', UserApiController::class)
-        ->only(['store', 'update', 'destroy']);
-});
-
 Route::apiResource('courses', CourseApiController::class)
     ->only(['index', 'show'])
     ->names([
@@ -88,12 +79,23 @@ Route::middleware('auth:sanctum')->group(function () {
         ]);
 });
 
-Route::apiResource('users', UserApiController::class);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::prefix('roles-permissions')->group(function () {
+        Route::get('/', [RolesAndPermissionsApiController::class, 'index']);
+        Route::post('/assign', [RolesAndPermissionsApiController::class, 'assignRole']);
+        Route::delete('/remove', [RolesAndPermissionsApiController::class, 'removeRole']);
+        Route::get('/user/{user}', [RolesAndPermissionsApiController::class, 'getUserRoles']);
+    });
 
-Route::prefix('roles-permissions')->group(function () {
-    Route::get('/', [RolesAndPermissionsApiController::class, 'index']);
-    Route::post('/assign', [RolesAndPermissionsApiController::class, 'assignRole']);
-    Route::delete('/remove', [RolesAndPermissionsApiController::class, 'removeRole']);
-    Route::get('/user/{user}', [RolesAndPermissionsApiController::class, 'getUserRoles']);
+    Route::name('api.v1.')->group(function () {
+        Route::apiResource('users', UserApiController::class)->names([
+            'index' => 'users.index',
+            'store' => 'users.store',
+            'show' => 'users.show',
+            'update' => 'users.update',
+            'destroy' => 'users.destroy',
+        ]);
+    });
 });
+
 
