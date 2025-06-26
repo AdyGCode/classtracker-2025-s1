@@ -54,9 +54,10 @@
                                             Cluster ID
                                         </x-input-label>
                                         <select name="cluster_id" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
-                                            <option value="">{{ old('cluster_id') ?? $lesson->cluster_id }}</option>
                                             @foreach ($clusters as $cluster)
-                                                <option value="{{ $cluster->code }}">{{ $cluster->code }}</option>
+                                                <option value="{{ $cluster->code }}" {{ (old('cluster_id', $lesson->cluster_id) == $cluster->code) ? 'selected' : '' }}>
+                                                    {{ $cluster->code }}
+                                                </option>
                                             @endforeach
                                         </select>
                                         <x-input-error :messages="$errors->get('cluster_id')" class="mt-2"/>
@@ -98,12 +99,11 @@
                                             Weekday
                                         </x-input-label>
                                         <select id="weekday" name="weekday" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
-                                            <option value="">{{ old('weekday') ?? $lesson->weekday}}</option>
-                                            <option value="Monday">Monday</option>
-                                            <option value="Tuesday">Tuesday</option>
-                                            <option value="Wednesday">Wednesday</option>
-                                            <option value="Thursday">Thursday</option>
-                                            <option value="Friday">Friday</option>
+                                            @foreach (['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] as $day)
+                                                <option value="{{ $day }}" {{ (old('weekday', $lesson->weekday) == $day) ? 'selected' : '' }}>
+                                                    {{ $day }}
+                                                </option>
+                                            @endforeach
                                         </select>
                                         <x-input-error :messages="$errors->get('weekday')" class="mt-2"/>
                                     </div>
