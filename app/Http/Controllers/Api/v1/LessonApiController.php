@@ -15,6 +15,8 @@ class LessonApiController extends Controller
     /**
      * Display a listing of the resource.
      * @return JsonResponse
+     *
+     * @unauthenticated
      */
     public function index(): JsonResponse
     {
@@ -58,6 +60,7 @@ class LessonApiController extends Controller
      * @param  Lesson  $lesson
      * @return JsonResponse
      *
+     * @unauthenticated
      */
     public function show(Lesson $lesson): JsonResponse
     {
