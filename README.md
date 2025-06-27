@@ -11,6 +11,7 @@ The project does NOT need a timetabling capability. It acts as a cheat sheet for
 - SQL Database (Primary)
 - Optional: Livewire, MongoDB
 - GitHub for version control
+- Screencraft and GitHub Actions for CI/CD
 
 ## Team Structure and Timeline
 - 4 team members
@@ -188,3 +189,13 @@ The project does NOT need a timetabling capability. It acts as a cheat sheet for
   - API documentation
   - User guides
   - Setup instructions
+- Deployment:
+  - Using GitHub Actions workflow
+  - Auto Deploy On CPanel
+  - Auto Asset Bundling - public/build folder
+
+## Auto Deployment via GitHub Actions
+This project uses GitHub Actions configured in this repository to implement automated deployment. 
+When changes are pushed to the main branch, a CI/CD workflow defined in `.github/workflows/deploy.sh` is triggered. 
+
+The workflow connects securely via SSH to a **CPanel shared hosting server** and deploys the latest code to the `/classtracker-2025-s1` working directory. 

@@ -10,17 +10,54 @@ use App\Models\Lesson;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 
+/**
+ * API Version 1 - LessonApiController
+ */
 class LessonApiController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     *
+     * A Paginated List of (all) Lessons
+     *
+     * <ul>
+     * <li>The lessons are searchable.</li>
+     * <li>Filter lessons by SEARCH_TERM: <code>?search=SEARCH_TERM</code></li>
+     * <li>The lessons are paginated.</li>
+     * <li>Jump to page PAGE_NUMBER per page: <code>page=PAGE_NUMBER</code></li>
+     * <li>Provide LESSONS_PER_PAGE per page: <code>perPage=LESSONS_PER_PAGE</code></li>
+     * <li>Example URI: <code>https://classtrack.screencraft.net.au/api/v1/lessons?search=ICT&page=2&perPage=15</code></li>
+     * </ul>
+     *
+     * @param  Request  $request
      * @return JsonResponse
-     */
-    public function index(): JsonResponse
+     *
+     * @unauthenticated
+ */
+    public function index(Request $request): JsonResponse
     {
-        $data = Lesson::with(['staff', 'students'])
+        $request->validate([
+            'page' => ['nullable', 'integer'],
+            'perPage' => ['nullable', 'integer'],
+            'search' => ['nullable', 'string'],
+        ]);
+
+        $lessonNumber = $request->perPage;
+        $search = $request->search;
+
+        $query = Lesson::query();
+
+        $searchableFields = ['course_id', 'cluster_id', 'name', 'start_date', 'end_date', 'weekday', 'duration'];
+
+        if ($search) {
+            foreach ($searchableFields as $field) {
+                $query->orWhere($field, 'like', '%' . $search . '%');
+            }
+        }
+
+        $data = $query
+            ->with(['staff', 'students'])
             ->orderBy('name', 'asc')
-            ->paginate(6);
+            ->paginate($lessonNumber ?? 6);
 
         if ($data->isEmpty()) {
             return ApiResponse::error([], 'No Lessons Found', 404);
@@ -55,13 +92,15 @@ class LessonApiController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  Lesson  $lesson
+     * @param  int  $id
      * @return JsonResponse
      *
+     * @unauthenticated
      */
-    public function show(Lesson $lesson): JsonResponse
+    public function show(int $id): JsonResponse
     {
-        $lesson = Lesson::with(['staff', 'students'])->findOrFail($lesson->id);
+        $lesson = Lesson::with(['staff', 'students'])->findOrFail($id);
+
         return ApiResponse::success($lesson, "Lesson retrieved successfully.");
     }
 

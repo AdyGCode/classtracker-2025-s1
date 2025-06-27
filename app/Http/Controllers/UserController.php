@@ -26,6 +26,25 @@ class UserController extends Controller
         return view('users.index', compact('data'));
     }
 
+    public function search(Request $request)
+    {
+        $search = $request->input('keywords');
+
+        $query = User::query();
+
+        $searchableFields = ['given_name', 'family_name', 'preferred_name', 'pronouns', 'email'];
+
+        if ($search) {
+            foreach ($searchableFields as $field) {
+                $query->orWhere($field, 'like', '%' . $search . '%');
+            }
+        }
+
+        $data = $query->paginate($lessonNumber ?? 6);
+
+        return view('users.index', compact(['data']));
+    }
+
     /**
     * Show the form for creating a new resource.
     */
