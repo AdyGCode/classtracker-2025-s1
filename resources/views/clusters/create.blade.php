@@ -76,14 +76,14 @@
                                         <x-input-error :messages="$errors->get('qualification_code')" class="mt-2"/>
                                     </div>
 
-                                    @foreach(range(1, 8) as $unit)
+                                    @foreach(range(1, 8) as $units)
                                         <div class="flex flex-col my-2">
                                             <x-input-label for="{{ 'unit_' . $unit }}">
                                                 Unit {{ $unit }}
                                             </x-input-label>
                                             <select name="unit_{{ $unit }}" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
                                                 <option value="">Select Unit</option>
-                                                @foreach ($units as $unitItem)
+                                                @foreach ($cluster->units as $unit)
                                                     <option value="{{ $unitItem->id }}">
                                                         {{ $unitItem->national_code }}
                                                     </option>

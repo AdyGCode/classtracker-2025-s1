@@ -31,11 +31,32 @@ use Illuminate\Http\Request;
  */
 class PackageApiController extends Controller
 {
+
     /**
-     * Returns a list of the Packages.
+     *
+     * A Paginated List of (all) Packages
+     *
+     * <ul>
+     * <li>The packages are searchable.</li>
+     * <li>Filter packages by SEARCH_TERM: <code>?search=SEARCH_TERM</code></li>
+     * <li>The packages are paginated.</li>
+     * <li>Jump to page PAGE_NUMBER per page: <code>page=PAGE_NUMBER</code></li>
+     * <li>Provide PACKAGES_PER_PAGE per page: <code>perPage=PACKAGES_PER_PAGE</code></li>
+     * <li>Example URI: <code>http://localhost:8000/api/v1/packages?search=ICT&page=1&perPage=15</code></li>
+     * </ul>
+     *
+     * @param  Request  $request
+     * @return JsonResponse
+     *
+     * @unauthenticated
      */
     public function index(Request $request): JsonResponse
     {
+        $request->validate([
+            'page' => ['nullable', 'integer'],
+            'perPage' => ['nullable', 'integer'],
+            'search' => ['nullable', 'string'],
+        ]);
 
         // set perPage parameter and specific number per page
         $packageNumber = $request->perPage;
@@ -44,11 +65,14 @@ class PackageApiController extends Controller
 
         $query = Package::with('courses');
 
-        $searchableFields = ['course', 'national_code', 'title', 'tga_status'];
+        $searchableFields = ['national_code', 'title', 'tga_status'];
 
         if ($search) {
             foreach ($searchableFields as $field) {
-                $query->orWhere($field, 'like', '%' . $search . '%');
+                $query->orWhere($field, 'like', '%' . $search . '%')
+                    ->orWhereHas('courses', function($query) use ($search) {
+                        $query->where('national_code', 'like', '%' . $search . '%');
+                    });
             }
         }
 
@@ -62,8 +86,13 @@ class PackageApiController extends Controller
         return ApiResponse::error([], "No Packages Found", 404);
     }
 
+
     /**
      * Display the specified Package.
+     * @param $id
+     * @return JsonResponse
+     *
+     * @unauthenticated
      */
     public function show($id): JsonResponse
     {
@@ -75,10 +104,11 @@ class PackageApiController extends Controller
         return ApiResponse::error([], "Specific Package Not Found", 404);
     }
 
+
     /**
      * Create & Store a new Package resource.
      *
-     * @param \App\Http\Requests\v1\StorePackagesRequest $request
+     * @param  StorePackagesRequest  $request
      * @return JsonResponse
      */
     public function store(StorePackagesRequest $request): JsonResponse
@@ -100,6 +130,10 @@ class PackageApiController extends Controller
 
     /**
      * Update the specified Package resource.
+     *
+     * @param  UpdatePackagesRequest  $request
+     * @param  Package  $package
+     * @return JsonResponse
      */
     public function update(UpdatePackagesRequest $request, Package $package): JsonResponse
     {
@@ -126,6 +160,9 @@ class PackageApiController extends Controller
 
     /**
      * Delete the specified Package from storage.
+     * @param  DeletePackagesRequest  $request
+     * @param $packageId
+     * @return JsonResponse
      */
     public function destroy(DeletePackagesRequest $request, $packageId): JsonResponse
     {

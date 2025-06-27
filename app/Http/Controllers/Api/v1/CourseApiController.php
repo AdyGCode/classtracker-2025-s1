@@ -29,11 +29,33 @@ use Illuminate\Http\Request;
  */
 class CourseApiController extends Controller
 {
+
     /**
-     * Returns a list of the Courses.
+     *
+     * A Paginated List of (all) Courses
+     *
+     * <ul>
+     * <li>The courses are searchable.</li>
+     * <li>Filter courses by SEARCH_TERM: <code>?search=SEARCH_TERM</code></li>
+     * <li>The courses are paginated.</li>
+     * <li>Jump to page PAGE_NUMBER per page: <code>page=PAGE_NUMBER</code></li>
+     * <li>Provide COURSES_PER_PAGE per page: <code>perPage=COURSES_PER_PAGE</code></li>
+     * <li>Example URI: <code>http://localhost:8000/api/v1/courses?search=ICT&page=2&perPage=15</code></li>
+     * </ul>
+     *
+     * @param  Request  $request
+     * @return JsonResponse
+     * @unauthenticated
      */
     public function index(Request $request): JsonResponse
     {
+
+        $request->validate([
+            'page' => ['nullable', 'integer'],
+            'perPage' => ['nullable', 'integer'],
+            'search' => ['nullable', 'string'],
+        ]);
+
         // set perPage parameter and specific number per page
         $courseNumber = $request->perPage;
         // set search parameter
@@ -41,7 +63,7 @@ class CourseApiController extends Controller
 
         $query = Course::query();
 
-        $searchableFields = ['course', 'national_code', 'aqf_level', 'title', 'tga_status', 'state_code', 'nominal_hours', 'type', 'qa', 'nat_code', 'nat_title'];
+        $searchableFields = ['national_code', 'aqf_level', 'title', 'tga_status', 'state_code', 'nominal_hours', 'type', 'qa', 'nat_code', 'nat_title', 'nat_code_title'];
 
         if ($search) {
             foreach ($searchableFields as $field) {
@@ -61,6 +83,10 @@ class CourseApiController extends Controller
 
     /**
      * Display the specified Course.
+     *
+     * @param $id
+     * @return JsonResponse
+     * @unauthenticated
      */
     public function show($id): JsonResponse
     {
@@ -77,7 +103,7 @@ class CourseApiController extends Controller
     /**
      * Create & Store a new Category resource.
      *
-     * @param \App\Http\Requests\v1\StoreCoursesRequest $request
+     * @param  StoreCoursesRequest  $request
      * @return JsonResponse
      */
     public function store(StoreCoursesRequest $request): JsonResponse
@@ -96,6 +122,10 @@ class CourseApiController extends Controller
 
     /**
      * Update the specified Course resource.
+     *
+     * @param  UpdateCoursesRequest  $request
+     * @param  Course  $course
+     * @return JsonResponse
      */
     public function update(UpdateCoursesRequest $request, Course $course): JsonResponse
     {
@@ -113,6 +143,10 @@ class CourseApiController extends Controller
 
     /**
      * Delete the specified Course from storage.
+     *
+     * @param  DeleteCoursesRequest  $request
+     * @param $courseId
+     * @return JsonResponse
      */
     public function destroy(DeleteCoursesRequest $request, $courseId): JsonResponse
     {

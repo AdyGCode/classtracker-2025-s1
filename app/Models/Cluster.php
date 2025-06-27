@@ -18,6 +18,7 @@ class Cluster extends Model
         'title',
         'qualification',
         'qualification_code',
+        'unit_id',
         'unit_1',
         'unit_2',
         'unit_3',

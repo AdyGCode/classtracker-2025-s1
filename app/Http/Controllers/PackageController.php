@@ -18,12 +18,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use App\Models\Package;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 
 class PackageController extends Controller
 {
+
     /**
      * Display a listing of the resource.
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function index()
     {
@@ -38,6 +45,7 @@ class PackageController extends Controller
 
     /**
      * Show the form for creating a new resource.
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function create()
     {
@@ -45,13 +53,16 @@ class PackageController extends Controller
             return redirect('/')->with('error', 'Unauthorised to create package!');
         }
 
+        // This is to display in the package creation form, allowing the user to associate courses with the new package.
         $courses = Course::all();
-//        $package = new Package();
+
         return view('packages.create',compact(['courses']));
     }
 
     /**
      * Store a newly created resource in storage.
+     * @param  Request  $request
+     * @return RedirectResponse
      */
     public function store(Request $request)
     {
@@ -75,7 +86,38 @@ class PackageController extends Controller
     }
 
     /**
+     * Search resources in storage.
+     * @param  Request  $request
+     * @return Factory|View|Application|object
+     */
+    public function search(Request $request)
+    {
+        // set search parameter
+        $search = $request->input('keywords');
+
+        $query = Package::with('courses');
+
+        $searchableFields = ['national_code', 'title', 'tga_status'];
+
+        if ($search) {
+            foreach ($searchableFields as $field) {
+                $query->orWhere($field, 'like', '%' . $search . '%')
+                    ->orWhereHas('courses', function($query) use ($search) {
+                    $query->where('national_code', 'like', '%' . $search . '%');
+                    });
+            }
+        }
+
+        //If there is no page, set to 6 items per page
+        $packages = $query->paginate($packageNumber ?? 6);
+
+        return view('packages.index', compact('packages'));
+    }
+
+    /**
      * Display the specified resource.
+     * @param  Package  $package
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function show(Package $package)
     {
@@ -83,6 +125,8 @@ class PackageController extends Controller
             return redirect('/')->with('error', 'Unauthorised to view package!');
         }
 
+        // the method retrieves the courses associated with the specified package:
+        // This leverages Laravel's Eloquent relationships to access the related courses for the given package.
         $courses = $package->courses;
 
             if ($package) {
@@ -94,8 +138,11 @@ class PackageController extends Controller
                 ->with('warning', 'Package not found');
     }
 
+
     /**
      * Show the form for editing the specified resource.
+     * @param  Package  $package
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function edit(Package $package)
     {
@@ -109,6 +156,9 @@ class PackageController extends Controller
 
     /**
      * Update the specified resource in storage.
+     * @param  Request  $request
+     * @param  string  $id
+     * @return RedirectResponse
      */
     public function update(Request $request, string $id)
     {
@@ -120,8 +170,9 @@ class PackageController extends Controller
             'tga_status' => ['required', 'min:5', 'max:255', 'string',],
         ]);
 
-        // Get the specific package id field and remove old ones that have been set previously.
+        // This retrieves all Course instances currently associated with the package:
         $oldCourses = Course::where('package_id', $package->id)->get();
+        // and remove old ones that have been set previously.
         foreach ($oldCourses as $oldCourse) {
             $oldCourse->update(['package_id' => null]);
         }
@@ -140,6 +191,8 @@ class PackageController extends Controller
 
     /**
      * Remove the specified resource from storage.
+     * @param  Package  $package
+     * @return Application|RedirectResponse|Redirector|object
      */
     public function destroy(Package $package)
     {

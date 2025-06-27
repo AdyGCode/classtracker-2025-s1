@@ -14,14 +14,17 @@ class LessonSeeder extends Seeder
      */
     public function run(): void
     {
-         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-
+        if(env('APP_ENV') === 'production') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        }
         // Truncate related tables first to avoid FK conflicts
         DB::table('lesson_user')->truncate();
         DB::table('lessons')->truncate();
 
         // Re-enable foreign key checks
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+        if(env('APP_ENV') === 'production') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+        }
 
         // Seed lessons
         Lesson::factory(20)->create();

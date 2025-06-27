@@ -34,16 +34,14 @@
                             <p class="col-span-5 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">{{ $cluster->qualification }}</p>
                             <p class="col-span-1 bg-zinc-300 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">Qualification Code</p>
                             <p class="col-span-5 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">{{ $cluster->qualification_code }}</p>
-                            <p class="col-span-1 bg-zinc-300 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">Unit</p>
-                            <p class="col-span-5 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10"></p>
                             @foreach($units as $unit)
                                 <p class="col-span-1 bg-zinc-300 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">Unit {{ $loop->index + 1 }}</p>
                                 <p class="col-span-5 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">{{ $unit->national_code }} - {{ $unit->title }}</p>
                             @endforeach
-{{--                           --}}{{-- @foreach($cluster->units as $unit)--}}{{----}}{{----}}
-{{----}}{{----}}{{--                                <p class="col-span-1 bg-zinc-300 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">Unit {{ $loop->index + 1 }}</p>--}}{{----}}{{----}}
-{{----}}{{----}}{{--                                <p class="col-span-5 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">{{ $unit->national_code }} - {{ $unit->title }}</p>--}}{{----}}{{----}}
-{{----}}{{----}}{{-- =                           @endforeach--}}
+                            @foreach($cluster->units as $unit)
+                                <p class="col-span-1 bg-zinc-300 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">Unit {{ $loop->index + 1 }}</p>
+                                <p class="col-span-5 whitespace-nowrap px-6 py-4 border-b border-zinc-200 dark:border-white/10">{{ $unit->national_code }} - {{ $unit->title }}</p>
+ =                           @endforeach
                         </section>
 
                         <footer class="grid gid-cols-1 px-6 py-4 border-b border-neutral-200 font-medium text-zinc-800 dark:border-white/10">

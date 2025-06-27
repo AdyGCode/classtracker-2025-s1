@@ -14,13 +14,38 @@
             <div class="bg-white overflow-hidden shadow-md sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
 
-                    <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-xl font-bold mb-6">Courses</h3>
-                        <x-primary-link-button href="{{ route('courses.create') }}"
-                                               class="bg-zinc-200 hover:bg-zinc-900 text-zinc-800 hover:text-white">
-                            <i class="fa-solid fa-user-plus "></i>
-                            <span class="pl-4">Add Course</span>
-                        </x-primary-link-button>
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold">Courses</h3>
+
+                        <div class="flex items-center space-x-4">
+                            @auth
+                                <form action="{{ route('courses.search') }}" method="POST" class="flex items-center space-x-2">
+                                    @csrf
+                                    <x-text-input type="text" name="keywords" placeholder="Course search..." value=""
+                                                  class="px-4 py-2 focus:outline-none text-black w-80"/>
+                                    <x-primary-button type="submit"
+                                                      class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 focus:outline-none transition ease-in-out duration-500">
+                                        <i class="fa fa-search"></i> {{ __('Search') }}
+                                    </x-primary-button>
+                                </form>
+                            @else
+                                <form action="{{ route('search') }}" method="POST" class="flex items-center space-x-2">
+                                    @csrf
+                                    <x-text-input type="text" name="keywords" placeholder="Course search..." value=""
+                                                  class="px-4 py-2 focus:outline-none text-black"/>
+                                    <x-primary-button type="submit"
+                                                      class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 focus:outline-none transition ease-in-out duration-500">
+                                        <i class="fa fa-search"></i> {{ __('Search') }}
+                                    </x-primary-button>
+                                </form>
+                            @endauth
+
+                            <x-primary-link-button href="{{ route('courses.create') }}"
+                                                   class="bg-zinc-200 hover:bg-zinc-900 text-zinc-800 hover:text-white px-4 py-2">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span class="pl-2">Add Course</span>
+                            </x-primary-link-button>
+                        </div>
                     </div>
 
                     <div class="overflow-x-auto">

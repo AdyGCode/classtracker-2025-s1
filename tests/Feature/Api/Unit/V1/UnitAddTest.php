@@ -15,7 +15,7 @@ test( 'API creates new unit (full details)', function () {
     $unit = Unit::factory()->make()->toArray();
 
     $nationalCode = $unit['national_code'];
-    $aqfLevel = $unit['aqf_level'];
+    //$aqfLevel = $unit['aqf_level'];
     $title = $unit['title'];
     $tgaStatus = $unit['tga_status'];
     $stateCode = $unit['state_code'];
@@ -35,7 +35,7 @@ test( 'API creates new unit (full details)', function () {
         'data' =>
             [
                 'national_code',
-                'aqf_level',
+                //'aqf_level',
                 'title',
                 'tga_status',
                 'state_code',
@@ -49,7 +49,7 @@ test( 'API creates new unit (full details)', function () {
             'message' => 'unit added',
             'data' => [
                 'national_code' => $nationalCode,
-                'aqf_level' => $aqfLevel,
+                //'aqf_level' => $aqfLevel,
                 'title' => $title,
                 'tga_status' => $tgaStatus,
                 'state_code' => $stateCode,

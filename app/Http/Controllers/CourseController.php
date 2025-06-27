@@ -16,12 +16,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 
 class CourseController extends Controller
 {
+
     /**
      * Display a listing of the resource.
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function index()
     {
@@ -33,8 +40,10 @@ class CourseController extends Controller
         return view('courses.index', compact(['courses', ]));
     }
 
+
     /**
      * Show the form for creating a new resource.
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function create()
     {
@@ -46,6 +55,8 @@ class CourseController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * @param  Request  $request
+     * @return RedirectResponse
      */
     public function store(Request $request)
     {
@@ -75,9 +86,39 @@ class CourseController extends Controller
         return redirect()->route('courses.index')
             ->with('success', 'Course created successfully');
     }
+    public function search(Request $request)
+    {
+        $request->validate([
+            'page' => ['nullable', 'integer'],
+            'perPage' => ['nullable', 'integer'],
+            'search' => ['nullable', 'string'],
+        ]);
+
+        // set perPage parameter and specific number per page
+        $courseNumber = $request->perPage;
+        // set search parameter
+        $search = $request->input('keywords');
+
+        $query = Course::query();
+
+        $searchableFields = ['national_code', 'aqf_level', 'title', 'tga_status', 'state_code', 'nominal_hours', 'type', 'qa', 'nat_code', 'nat_title', 'nat_code_title'];
+
+        if ($search) {
+            foreach ($searchableFields as $field) {
+                $query->orWhere($field, 'like', '%' . $search . '%');
+            }
+        }
+
+        //If there is no page, set to 6 items per page
+        $courses = $query->paginate($courseNumber ?? 6);
+
+        return view('courses.index', compact('courses'));
+    }
 
     /**
      * Display the specified resource.
+     * @param  string  $id
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function show(string $id)
     {
@@ -99,6 +140,8 @@ class CourseController extends Controller
 
     /**
      * Show the form for editing the specified resource.
+     * @param  Course  $course
+     * @return Factory|View|Application|RedirectResponse|Redirector|object
      */
     public function edit(Course $course)
     {
@@ -112,6 +155,9 @@ class CourseController extends Controller
 
     /**
      * Update the specified resource in storage.
+     * @param  Request  $request
+     * @param  string  $id
+     * @return RedirectResponse
      */
     public function update(Request $request, string $id)
     {
@@ -145,6 +191,8 @@ class CourseController extends Controller
 
     /**
      * Remove the specified resource from storage.
+     * @param  Course  $course
+     * @return Application|RedirectResponse|Redirector|object
      */
     public function destroy(Course $course)
     {

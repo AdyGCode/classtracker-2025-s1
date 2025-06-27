@@ -11,15 +11,15 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
-
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('static.home')" :active="request()->routeIs('static.home')">
                         {{ __('Home') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
 
@@ -91,7 +91,10 @@
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 @auth
                     <div class="flex items-center space-x-4">
-                        <div class="text-blue-500 font-bold italic">{{ Auth::user()->preffered_name ?? Auth::user()->given_name }}</div>
+                        <x-nav-link  :href="route('profile.edit')" >
+                            <div class="text-blue-500 font-bold italic">{{ Auth::user()->preffered_name ?? Auth::user()->given_name }}</div>
+                        </x-nav-link>
+
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="text-blue-500 hover:text-blue-700 font-bold border-b-2 border-blue-300 hover:border-blue-700 pb-1 transition duration-300 ease-in-out">
