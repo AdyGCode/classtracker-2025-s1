@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 
 //Route::post('/register', [AuthApiController::class, 'register']);
 Route::post('/login', [AuthApiController::class, 'login']);
-Route::get('/profile', [AuthApiController::class, 'profile']);
+//Route::get('/profile', [AuthApiController::class, 'profile']);
 //Route::post('/logout', [AuthApiController::class, 'logout']);
 
 Route::apiResource('courses', CourseApiController::class)

@@ -8,6 +8,7 @@ use App\Http\Requests\StoreLessonRequest;
 use App\Http\Requests\UpdateLessonRequest;
 use App\Models\User;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class LessonController extends Controller
 {
@@ -20,6 +21,35 @@ class LessonController extends Controller
             return redirect('/')->with('error', 'Unauthorised to access this page.');
         }
         $data = Lesson::orderBy('name', 'asc')->paginate(6);
+        return view('lessons.index', compact(['data']));
+    }
+
+    public function search(Request $request)
+    {
+        $request->validate([
+            'page' => ['nullable', 'integer'],
+            'perPage' => ['nullable', 'integer'],
+            'search' => ['nullable', 'string'],
+        ]);
+
+        $lessonNumber = $request->input('perPage', 6);
+        $search = $request->input('keywords');
+
+        $query = Lesson::query();
+
+        $searchableFields = ['course_id', 'cluster_id', 'name', 'start_date', 'end_date', 'weekday', 'duration'];
+
+        if ($search) {
+            foreach ($searchableFields as $field) {
+                $query->orWhere($field, 'like', '%' . $search . '%');
+            }
+        }
+
+        $data = $query
+            ->with(['staff', 'students'])
+            ->orderBy('name', 'asc')
+            ->paginate($lessonNumber ?? 6);
+
         return view('lessons.index', compact(['data']));
     }
 
@@ -89,7 +119,7 @@ class LessonController extends Controller
         if (!auth()->user()->hasRole('Super Admin|Admin')) {
             return redirect('/')->with('error', 'Unauthorised to edit lesson.');
         }
-      
+
         return view('lessons.edit', compact(['lesson', 'clusters', 'students', 'staffs']));
     }
 

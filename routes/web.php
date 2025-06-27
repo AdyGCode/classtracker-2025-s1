@@ -66,6 +66,13 @@ Route::delete('/roles-permissions/destroy', [RolesAndPermissionsController::clas
 Route::resource('users', UserController::class);
 Route::resource('lessons', LessonController::class);
 
+// define search routes for users and lessons
+Route::match(['get', 'post'], '/lessons/search', [LessonController::class, 'search'])
+    ->name('lessons.search');
+
+Route::match(['get', 'post'], '/users/search', [UserController::class, 'search'])
+    ->name('users.search');
+
 // Route::redirect('/api/v1/doc', '/docs/api');
 
 

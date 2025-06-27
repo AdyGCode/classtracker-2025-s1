@@ -194,5 +194,8 @@ The project does NOT need a timetabling capability. It acts as a cheat sheet for
   - Auto Deploy On CPanel
   - Auto Asset Bundling - public/build folder
 
-## Auto Deployment via Fork Repository
-This project implements an automated deployment process using GitHub Actions configured within this [forked repository](https://github.com/availedgray/classtracker-2025-s1). Whenever changes are pushed to the main branch of the fork, a CI/CD pipeline is triggered to securely connect to the shared Screencraft server via SSH and deploy the updated code.
+## Auto Deployment via GitHub Actions
+This project uses GitHub Actions configured in this repository to implement automated deployment. 
+When changes are pushed to the main branch, a CI/CD workflow defined in `.github/workflows/deploy.sh` is triggered. 
+
+The workflow connects securely via SSH to a **CPanel shared hosting server** and deploys the latest code to the `/classtracker-2025-s1` working directory. 
