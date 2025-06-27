@@ -38,7 +38,7 @@ class PackageController extends Controller
             return redirect('/')->with('error', 'Unauthorised to access this page.');
         }
 
-        $packages = Package::paginate(10);
+        $packages = Package::paginate(6);
 
         return view('packages.index', compact(['packages']));
     }
@@ -109,7 +109,7 @@ class PackageController extends Controller
         }
 
         //If there is no page, set to 6 items per page
-        $packages = $query->paginate($packageNumber ?? 6);
+        $packages = $query->paginate($packageNumber ?? 6)->appends($request->except('page'));
 
         return view('packages.index', compact('packages'));
     }

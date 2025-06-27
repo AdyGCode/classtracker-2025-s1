@@ -86,6 +86,12 @@ class CourseController extends Controller
         return redirect()->route('courses.index')
             ->with('success', 'Course created successfully');
     }
+
+    /**
+     * Search resources in storage.
+     * @param  Request  $request
+     * @return Factory|View|Application|object
+     */
     public function search(Request $request)
     {
         $request->validate([
@@ -110,7 +116,7 @@ class CourseController extends Controller
         }
 
         //If there is no page, set to 6 items per page
-        $courses = $query->paginate($courseNumber ?? 6);
+        $courses = $query->paginate($courseNumber ?? 6)->appends($request->except('page'));
 
         return view('courses.index', compact('courses'));
     }
@@ -177,11 +183,20 @@ class CourseController extends Controller
             'nat_code_title' => ['sometimes','nullable','min:5', 'max:255', 'string',],
         ]);
 
-        $validated['qa'] = $validated['qa'] ?? $validated['state_code'];
-        $validated['nat_code'] = $validated['nat_code'] ?? $validated['national_code'];
-        $validated['nat_title'] = $validated['nat_title'] ?? $validated['title'];
-        $validated['nat_code_title'] = $validated['nat_code_title'] ?? "{$validated['nat_code']} {$validated['aqf_level']} {$validated['nat_title']}";
-
+        if ($course->state_code !== $validated['state_code']) {
+            $validated['qa'] = $validated['state_code'];
+        }
+        if ($course->national_code !== $validated['national_code']) {
+            $validated['nat_code'] = $validated['national_code'];
+        }
+        if ($course->title !== $validated['title']) {
+            $validated['nat_title'] = $validated['title'];
+        }
+        if (
+            ($course->national_code !== $validated['national_code']) || ($course->aqf_level !== $validated['aqf_level']) || ($course->title !== $validated['title'])
+        ) {
+            $validated['nat_code_title'] = "{$validated['national_code']} {$validated['aqf_level']} {$validated['title']}";
+        }
 
         $course->update($validated);
 

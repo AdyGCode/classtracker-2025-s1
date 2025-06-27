@@ -102,7 +102,7 @@
                             </tbody>
 
                             <tfoot>
-                            <tr class="bg-zinc-100">
+                            <tr class="bg-zinc-100 justify-between">
                                 <td colspan="14" class="px-6 py-2 text-center">
                                     @if( $packages->hasPages() )
                                         {{ $packages->links() }}
