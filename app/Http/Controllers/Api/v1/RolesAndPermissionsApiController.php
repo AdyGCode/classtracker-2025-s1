@@ -11,7 +11,14 @@ use Spatie\Permission\Models\Role;
 class RolesAndPermissionsApiController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get all Roles and Users with Roles
+     *
+     * <ul>
+     * <li>Returns all available roles.</li>
+     * <li>Returns all users and their assigned roles.</li>
+     * </ul>
+     *
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
@@ -28,6 +35,18 @@ class RolesAndPermissionsApiController extends Controller
         ], 'Roles and users retrieved successfully');
     }
 
+    /**
+     * Assign a Role to a User
+     *
+     * <ul>
+     * <li>Only assigns a role if user exists and is verified.</li>
+     * <li>Fails if role is already assigned.</li>
+     * <li>Available roles must already exist in database.</li>
+     * </ul>
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function assignRole(Request $request)
     {
         $request->validate([
@@ -54,6 +73,17 @@ class RolesAndPermissionsApiController extends Controller
         return ApiResponse::success(null, 'Role assigned to user successfully.');
     }
 
+    /**
+     * Remove a Role from a User
+     *
+     * <ul>
+     * <li>Only removes a role if the user and role exist.</li>
+     * <li>Fails if the role is not currently assigned.</li>
+     * </ul>
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function removeRole(Request $request)
     {
         $request->validate([
@@ -76,6 +106,17 @@ class RolesAndPermissionsApiController extends Controller
         return ApiResponse::success(null, 'Role removed from user successfully.');
     }
 
+    /**
+     * Get All Roles Assigned to a Specific User
+     *
+     * <ul>
+     * <li>Returns the user's preferred name.</li>
+     * <li>Returns an array of all roles currently assigned.</li>
+     * </ul>
+     *
+     * @param User $user
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getUserRoles(User $user)
     {
         return ApiResponse::success([
